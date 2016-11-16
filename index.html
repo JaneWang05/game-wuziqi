@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+    <audio src="bj.mp3"></audio>
+    <audio src="zi.mp3"></audio>
+    <div class="page1">
+	  	<div class="doorleft"></div>
+	  	<div class="doorright"></div>
+	  	<div class="p"></div>
+  	</div>
+    <div class="page2">
+		<canvas width="600" height="600" id="canvas"></canvas>
+		<canvas width="100" height="100" id="canvas1" class="canvas1"></canvas>
+		<canvas width="100" height="100" id="canvas2" class="canvas1 canvas2"></canvas>
+		<div class="tishi">
+			<span></span>
+			<div class="select">
+				<li class="yes">查看棋谱</li>
+				<li class="no">重新开始</li>
+			</div>
+		</div>
+		<div class="qi hei"></div>
+		<div class="qi bai"></div>
+		<div class="anniubox">
+			<div class="duizhan button">人人对战</div>
+	    	<div class="start button">开始游戏</div>
+	    	
+		    <div class="restart button">重新开棋</div>
+		    <div class="jieshao button">游戏介绍</div>
+		    <div class="bjmusic button">背景音乐</div>
+		    <div class="gameover button">退出游戏</div>
+        </div>
+        <div class="jieshaoinfo">
+        	<p class="js">1.黑子先、白子后，双方落子时间为60秒</p>
+        	<p>2.规定时间内未落子视为认输</p>
+        	<p>3.任意一方先在棋盘上形成横向、竖向、斜向连续的五颗棋子且相同颜色的的一方获胜。</p>
+        	<span>知道了</span>
+        </div>
+    </div>
+</body>
+</html>
